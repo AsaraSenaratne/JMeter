@@ -1,0 +1,4 @@
+node {
+  stage 'Run JMeter Test'
+  sh '/usr/local/Cellar/jmeter/3.1/libexec/bin/jmeter.sh -n -t ~/Downloads/JMeterTests/JMeter_Jenkins/ftpsite_test.jmx -l results.jtl'
+}
